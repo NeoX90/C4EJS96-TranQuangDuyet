@@ -21,18 +21,18 @@ console.log("3:a")
 console.log("4:e,d")
 
 console.log("b3")
-let message = ‘Coding is great’;
+let message = "Coding is great";
 console.log(message);
 
 var studentCount =0;
 console.log(studentCount);
 
-console.log("b4")
-console.log("a + c)")
-let message = "Coding might not be easy, but still great";
-console.log(message);
-message = message.toLowerCase();
-console.log(message);
+console.log("b4");
+console.log("a + c)");
+let message1 = "Coding might not be easy, but still great" ;
+console.log(message1);
+message1 = message1.toLowerCase();
+console.log(message1);
 
 console.log("b + d)")
 var studentCount =16;
@@ -53,14 +53,14 @@ var lastName = prompt("enter your last name");
 alert('hi '+ lastName+" "+ fristName)
 
 console.log("b8")
-var x = prompt("enter sile lenght of square");
-alert("the square area is "+ x*x)
+var c = prompt("enter sile lenght of square");
+alert("the square area is "+ c*c)
 
 console.log("b9")
-var x = prompt("enter radius of circle");
-alert("the circle are is "+ parseFloat(Math.pow(x,2)*3.14))
+var b = prompt("enter radius of circle");
+alert("the circle are is "+ parseFloat(Math.pow(b,2)*3.14))
 
 console.log("b10")
-var x = prompt("enter the temperature in Celsius");
-alert(x+"(C) = " + parseFloat(x*1.8 +32) + "(F)")
+var a = prompt("enter the temperature in Celsius");
+alert(a+"(C) = " + parseFloat(a*1.8 +32) + "(F)")
 
