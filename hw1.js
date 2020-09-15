@@ -28,13 +28,13 @@ var studentCount =0;
 console.log(studentCount);
 
 console.log("b4")
-console.log("a + c")
+console.log("a + c)")
 let message = "Coding might not be easy, but still great";
 console.log(message);
 message = message.toLowerCase();
 console.log(message);
 
-console.log("b + d")
+console.log("b + d)")
 var studentCount =16;
 console.log(studentCount);
 studentCount += 1;
