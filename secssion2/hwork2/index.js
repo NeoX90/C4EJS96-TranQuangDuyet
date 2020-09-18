@@ -1,0 +1,1 @@
+console.log("boolean: A value in JavaScript is always of a certain type \n\n The boolean type has only two values: true and false")
