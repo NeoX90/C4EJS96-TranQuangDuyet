@@ -127,13 +127,13 @@
 //   sum +=Flock[i];
 // }
 // // 8.5
-// // for(let j =2; j < 5;j++){
-// //   console.log("Month "+j+ " \n One month has passed, my sheep has grow, here are there size: \n\n" );
-// //   for(let i=0; i< Flock.length; i++){
-// //     sum =Flock[i]+50*j;
-// //     console.log(sum)
-// //   }
-// // }
+// for(let j =2; j < 5;j++){
+//   console.log("Month "+j+ " \n One month has passed, my sheep has grow, here are there size: \n\n" );
+//   for(let i=0; i< Flock.length; i++){
+//     sum =Flock[i]+50*j;
+//     console.log(sum)
+//   }
+// }
 // // 8.6
 // console.log("my Flock size total is: "+sum)
 // let k = prompt("How much for 1 kg Sheep meat")
