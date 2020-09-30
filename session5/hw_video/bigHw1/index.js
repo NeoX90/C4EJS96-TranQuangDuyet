@@ -98,7 +98,11 @@ let x = myQuestion.length;
 for(let i = x-1;i >= 0; i--){ // chưa chỉnh được phần alert question
   x = myQuestion.length;
   let j = Math.floor(Math.random() * x);
-  alert(myQuestion[j].question+'\n'+JSON.stringify(myQuestion[j].answer))
+  let b = '';
+  for (let i = 0; i < myQuestion[j].length; i++) {
+    b += '\n' + myQuestion[j]answer[i].name;
+  }
+  alert(myQuestion[j].question+'\n'+b)
   let a = Number(prompt('enter a number answer : '));
   if(a === myQuestion[j].result){
     alert('bravo');
