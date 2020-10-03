@@ -4,6 +4,11 @@ var count = {};
 arr.forEach(function(i) { count[i] = (count[i]||0) + 1;});
 console.log(count);
 
+// cach 2
+let wordArr = [];
+for(let i = 0; i <arr.length;i++){
+    
+}
 // hw2
 let listbrand = {};
 for (let items of inventory) {

@@ -1,0 +1,17 @@
+div{
+    height: 150px;
+    width: 500px;
+    background-image: url(https://brasol.vn/public/uploads/1521196881-brasol.vn-logo-google-vector-logo-google-3.png);
+    background-size: 75px 75px;
+    background-repeat: repeat-x;
+    /* background-repeat: repeat-y;
+    background-repeat: no-repeat; */
+    border: 3px solid black;
+    border-radius: 5px;
+};
+.div1{
+    background-size: contain;
+}
+.div2{
+    background-size: cover;
+}

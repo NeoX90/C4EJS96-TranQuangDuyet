@@ -1,0 +1,21 @@
+div{
+    background-color: wheat;
+    /* Insert code below */
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+  };
+a{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background:wheat;
+    /* Insert code below */
+    color: green;
+    text-decoration:none;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle ;
+    font-family: 'Beth Ellen';
+}

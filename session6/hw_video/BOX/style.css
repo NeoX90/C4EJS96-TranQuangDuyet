@@ -1,0 +1,34 @@
+/* 1 */
+div{
+    background: wheat;
+    width:400px;
+    border: 2px solid green;
+  /*  Insert code below  */
+    padding-left:40px;
+    padding-right:40px;
+  /*   padding: 40px 45px; */
+}
+
+/* 2 */
+#a >div {
+    background:wheat;
+    /*  Insert code bellow   */
+     margin-left:40px;
+     margin-right:40px;
+     margin-top: 50px;
+     margin-bottom:50px;
+  /*    margin:50px; */
+}
+/* 3 */
+div{
+    width : 200px;
+    height : 200px;
+    font-size:2em;
+    background:wheat;
+    
+  /* Insert code bellow   */
+    box-sizing:border-box;
+    padding-left:200px;
+}
+  
+  

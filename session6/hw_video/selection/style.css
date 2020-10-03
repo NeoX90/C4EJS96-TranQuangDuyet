@@ -1,0 +1,33 @@
+/* selector */
+/* 1 */
+/* p {
+    color: red;
+}; */
+/* 2 */
+/* .content{
+    color: #00FF00;
+} */
+/* 3 */
+/* .font24 {
+    font-size: 24px;
+}; */
+/* 4 */
+/* div{
+    font-size: 3em;
+    background: wheat
+  } */
+/* 5 */
+/* .blue{
+    color:blue;
+  } */
+/* 6 */
+[target]{
+    color: yellow;
+}
+/* 7 */
+li{
+    font-weight: bold;
+}
+.item > span{
+    font-style: italic;
+}

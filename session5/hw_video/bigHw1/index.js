@@ -75,8 +75,7 @@ const myQuestion = [
   {
     question : ' đất nước nào nằm ở châu Âu ?',
     answer : {
-      1 : 'Úc',
-      2 : 'Áo',
+3      2 : 'Áo',
       3 : 'Canada',
       4 : 'Thổ nhĩ kì'
     },
@@ -98,10 +97,12 @@ let x = myQuestion.length;
 for(let i = x-1;i >= 0; i--){ // chưa chỉnh được phần alert question
   x = myQuestion.length;
   let j = Math.floor(Math.random() * x);
+
   let b = '';
-  for (let i = 0; i < myQuestion[j].length; i++) {
-    b += '\n' + myQuestion[j]answer[i].name;
+  for (let h = 0; h < 5; h++) {
+    b += '\n' + myQuestion[j].answer[h];
   }
+  
   alert(myQuestion[j].question+'\n'+b)
   let a = Number(prompt('enter a number answer : '));
   if(a === myQuestion[j].result){
