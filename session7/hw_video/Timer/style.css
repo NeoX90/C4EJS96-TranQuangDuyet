@@ -1,0 +1,9 @@
+body{
+    display: flex;
+}
+.demo{
+    width: 12px;
+}
+.showMess{
+    width: 10px;
+}
