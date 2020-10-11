@@ -7,7 +7,7 @@ function testPromise(){
         },5000)
     });
     return promise;
-    
+     
 }
 // promise.then((showMes)=>{
 //     console.log(showMes)
