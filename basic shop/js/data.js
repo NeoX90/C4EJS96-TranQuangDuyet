@@ -1,5 +1,6 @@
 const products =[
     {   
+        id: '01',
         category : `apparel`,
                 // + shoes 
                 // + accessories
@@ -14,6 +15,7 @@ const products =[
             // t-shirt, pants , suits ,trousers ,...
     },
     {   
+        id: '02',
         category : `apparel`,
         name : `CONTINENT CAMO CITY LONG SHORTS`,
         brand : `adidas`,
@@ -24,6 +26,7 @@ const products =[
         productType : `shorts`,
     },
     {   
+        id: '03',
         category : `apparel`,
         name : `COLD.RDY DOWN JACKET`,
         brand : `adidas`,
@@ -34,6 +37,7 @@ const products =[
         productType : `jacket`,
     },
     {   
+        id: '04',
         category : `shoes`,
         name : `ZX 2K BOOST SHOES`,
         brand : `adidas`,
@@ -44,6 +48,7 @@ const products =[
         productType : `originals`,
     },
     {   
+        id: '05',
         category : `shoes`,
         name : `DONOVAN MITCHELL D.O.N. ISSUE #2 CRAYOLA SHOES`,
         brand : `adidas`,
@@ -54,6 +59,7 @@ const products =[
         productType : `originals`,
     },
     {   
+        id: '06',
         category : `shoes`,
         name : `X9000L4 SHOES`,
         brand : `adidas`,
@@ -64,6 +70,7 @@ const products =[
         productType : `running`,
     },
     {   
+        id: '07',
         category : `apparel`,
         name : `TREFOIL HOODIE`,
         brand : `adidas`,
@@ -74,6 +81,7 @@ const products =[
         productType : `hoodie`,
     },
     {   
+        id: '08',
         category : `apparel`,
         name : `ADIDAS X ZOE SALDANA COLLECTION WOMEN'S LONG SLEEVE SHIRT`,
         brand : `adidas`,
@@ -84,6 +92,7 @@ const products =[
         productType : `shirt`,
     },
     {   
+        id: '09',
         category : `apparel`,
         name : `ADIDAS X ZOE SALDANA COLLECTION WOMEN'S TIGHT`,
         brand : `adidas`,
@@ -94,6 +103,7 @@ const products =[
         productType : `tight`,
     },
     {   
+        id: '10',
         category : `apparel`,
         name : `COLD.RDY DOWN JACKET`,
         brand : `adidas`,
@@ -105,6 +115,7 @@ const products =[
     }, 
     // vietkhuat data
     {   
+        id: '11',
         category : `accessories`,
         name : `GOTHIC EMBROIDERED HAT`,
         brand : `VETEMENTS`,
@@ -116,6 +127,7 @@ const products =[
             // t-shirt, pants , suits ,trousers ,...
     },
     {   
+        id: '12',
         category : `accessories`,
         name : `LOGO MERINO-WOOL SCARF`,
         brand : `VETEMENTS`,
@@ -126,6 +138,7 @@ const products =[
         productType : `scarves`,
     },
     {   
+        id: '13',
         category : `apparel`,
         name : `LOGO PRINT RAINCOAT`,
         brand : `VETEMENTS`,
@@ -136,6 +149,7 @@ const products =[
         productType : `coast`,
     },
     {   
+        id: '14',
         category : `shoes,`,
         name : `SPIKE RUNNER 2 SNEAKERS`,
         brand : `VETEMENTS`,
@@ -146,6 +160,7 @@ const products =[
         productType : [`shoes`, `sneakers`],
     },
     {   
+        id: '15',
         category : `shoes`,
         name : `BOOMERANG PATENT LEATHER ANKLE BOOTS`,
         brand : `VETEMENTS`,
@@ -156,6 +171,7 @@ const products =[
         productType : [`shoes`,`boots`],
     },
     {   
+        id: '16',
         category : `apparel`,
         name : `REVERSIBLE WHITE & BLACK BOMBER JACKET`,
         brand : `VETEMENTS`,
@@ -166,6 +182,7 @@ const products =[
         productType : `jackets`,
     },
     {   
+        id: '17',
         category : `apparel`,
         name : `CRYSTAL-EMBELLISHED HOODED SWEATSHIRT IN BLACK`,
         brand : `VETEMENTS`,
@@ -176,6 +193,7 @@ const products =[
         productType : `hoodie`,
     },
     {   
+        id: '18',
         category : `accessories`,
         name : `BLACK LOGO BACKPACK`,
         brand : `VETEMENTS`,
@@ -186,6 +204,7 @@ const products =[
         productType : `bags`,
     },
     {   
+        id: '19',
         category : `apparel`,
         name : `IT COSTS COTTON T-SHIRT`,
         brand : `VETEMENTS`,
@@ -196,6 +215,7 @@ const products =[
         productType : `t-shirts`,
     },
     {   
+        id: '20',
         category : `accessories`,
         name : `LOGO-ENGRAVED SIGNET RING`,
         brand : `VETEMENTS`,
@@ -208,6 +228,7 @@ const products =[
     }, 
     //ng bao long data
     {
+        id: '21',
         category : `apparel`,
                 // + shoes 
                 // + accessories
@@ -221,6 +242,7 @@ const products =[
         productType : `hoodie`,
     },
     {
+        id: '22',
         category : `apparel`,
                 // + shoes 
                 // + accessories
@@ -234,6 +256,7 @@ const products =[
         productType : `t-shirt`,
     },
     {
+        id: '23',
         category : `accessories`,
                 // + shoes 
                 // + apparel
@@ -247,6 +270,7 @@ const products =[
         productType : `bag`,
     },
     {
+        id: '24',
         category : `accessories`,
                 // + shoes 
                 // + apparel
@@ -260,6 +284,7 @@ const products =[
         productType : `bag`,
     },
     {
+        id: '25',
         category : `accessories`,
                 // + shoes 
                 // + apparel
@@ -273,6 +298,7 @@ const products =[
         productType : `bag`,
     },
     {
+        id: '26',
         category : `shoes`,
                 // + accessories 
                 // + apparel
@@ -286,6 +312,7 @@ const products =[
         productType : `track`,
     },
     {
+        id: '27',
         category : `shoes`,
                 // + accessories 
                 // + apparel
@@ -299,6 +326,7 @@ const products =[
         productType : `track`,
     },
     {
+        id: '28',
         category : `shoes`,
                 // + accessories 
                 // + apparel
@@ -312,6 +340,7 @@ const products =[
         productType : `triple s`,
     },
     {
+        id: '29',
         category : `shoes`,
                 // + accessories 
                 // + apparel
@@ -325,6 +354,7 @@ const products =[
         productType : `speed`,
     },
     {
+        id: '30',
         category : `shoes`,
                 // + accessories 
                 // + apparel
@@ -338,7 +368,7 @@ const products =[
         productType : `speed 2.0`,
     },
     // do duy hieu data
-    {   
+    {   id: '31',
         category : `apparel`,
         name : `Nike Sportwear`,
         brand : `Nike`,
@@ -350,7 +380,7 @@ const products =[
         productType : `T- Shirt`,
            
     },
-    {   
+    {   id: '32',
         category : `apparel`,
         name : `Nike Dri-FIT Player`,
         brand : `Nike`,
@@ -361,6 +391,7 @@ const products =[
         productType : `Polo`,
     },
     {   
+        id: '33',
         category : `apparel`,
         name : `Short-Sleeve Running Top`,
         brand : `Nike`,
@@ -371,6 +402,7 @@ const products =[
         productType : `T-shirt`,
     },
     {   
+        id: '34',
         category : `shoes`,
         name : `Nike Air Force 1 Crater`,
         brand : `Nike`,
@@ -381,6 +413,7 @@ const products =[
         productType : `originals`,
     },
     {   
+        id: '35',
         category : `shoes`,
         name : `Nike Air Force 1 React LV8`,
         brand : `Nike`,
@@ -390,7 +423,8 @@ const products =[
         price : 900,
         productType : `originals`,
     },
-    {   
+    {
+        id: '36',
         category : `shoes`,
         name : `Nike Tạnun`,
         brand : `Nike`,
@@ -401,6 +435,7 @@ const products =[
         productType : `running`,
     },
     {   
+        id: '37',
         category : `apparel`,
         name : `Nike BETRUE`,
         brand : `Nike`,
@@ -411,6 +446,7 @@ const products =[
         productType : `hoodie`,
     },
     {   
+        id: '38',
         category : `apparel`,
         name : `Nike Sport Tech Pack`,
         brand : `Nike`,
@@ -421,6 +457,7 @@ const products =[
         productType : `Jacket`,
     },
     {   
+        id: '39',
         category : `apparel`,
         name : `Nike SportSwear`,
         brand : `Nike`,
@@ -431,6 +468,7 @@ const products =[
         productType : `Dress`,
     },
     {   
+        id: '40',
         category : `apparel`,
         name : `Nike Essential`,
         brand : `Nike`,
@@ -440,4 +478,53 @@ const products =[
         price : 400,
         productType : `pants `,
     }, 
+],
+// tk user + admin
+const user =[
+    {
+        email : 'admin123@gmail.com',
+        userName : 'admin dep trai',
+        password : 'Anh213210',
+        role: 'admin'
+    },
+    {
+        userName : 'duyet tran',
+        name : 'Trần Quang Duyệt',
+        age : 20,
+        address : '20 Đồng Me , Mễ Trì , Nam Từ Liêm , Hà Nội',
+        phoneNumber : `0969907663`,
+        email : 'hieuminhtran050300@gmail.com',
+        password : '123456789',
+        role : 'client',
+    },
+    {   
+        userName : 'hieuthuba',
+        name : 'Đỗ Duy Hiếu',
+        age : 21,
+        address : '1207C kdt Linh Đàm , Hà Nội',
+        phoneNumber : `0123456789`,
+        email : 'duyhieu99@gmail.com',
+        password : '123456789',
+        role : 'client',
+    },
+    {
+        userName : 'long bot',
+        name : 'Nguyễn bảo Long',
+        age : 20,
+        address : '14 ngõ 32/47 Đỗ Đức Dục , Mễ Trì , Nam Từ Liêm , Hà Nội',
+        phoneNumber : `0969567890`,
+        email : 'longbot00@gmail.com',
+        password : '123456789',
+        role : 'client',
+    },
+    {
+        userName : 'vietbatkhuat',
+        name : 'Khuất Quang Việt',
+        age : 20,
+        address : '79 Lê Trọng Tấn, Hà Đông , Hà Nội',
+        phoneNumber : `0382512348`,
+        email : 'vietkhuat00@gmail.com',
+        password : '123456789',
+        role : 'client',
+    },
 ]
