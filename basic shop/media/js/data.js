@@ -11,6 +11,7 @@ const products =[
         gender : ['male'],
                 // female
         price : 50,
+        img 
         productType : `pants`,
             // t-shirt, pants , suits ,trousers ,...
     },
@@ -528,3 +529,4 @@ const user =[
         role : 'client',
     },
 ]
+
