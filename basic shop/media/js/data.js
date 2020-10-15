@@ -1,6 +1,6 @@
 const products =[
     {   
-        id: '01',
+        id : `O1`,
         category : `apparel`,
                 // + shoes 
                 // + accessories
@@ -11,7 +11,8 @@ const products =[
         gender : ['male'],
                 // female
         price : 50,
-        img 
+        img : [`./media/img/apparel/pants/Badge_of_Sport_French_Terry_Pants_Black_GC7344_21_model.jpg`,`./media/img/apparel/pants/Badge_of_Sport_French_Terry_Pants_Black_GC7344_22_model.jpg`],
+        description :`CASUAL SWEAT PANTS WITH A FLASH OF SPORT STYLE.`,
         productType : `pants`,
             // t-shirt, pants , suits ,trousers ,...
     },
@@ -24,6 +25,8 @@ const products =[
         color : ['white','black','grey','gold'],
         gender : ['male'],
         price : 45,
+        img : [`./media/img/apparel/shorts/Continent_Camo_City_Long_Shorts_White_GH5162_21_model.jpg`,`./media/img/apparel/shorts/Continent_Camo_City_Long_Shorts_White_GH5162_25_model.jpg`],
+        description :`ADIDAS TRAINING SHORTS WITH SIDE SEAM POCKETS.`,
         productType : `shorts`,
     },
     {   
@@ -35,6 +38,8 @@ const products =[
         color : ['white','black','grey'],
         gender : ['male'],
         price : 400,
+        img : [`./media/img/apparel/jacket/COLD.RDY_Down_Jacket_Grey_FT2420_21_model.jpg`,`./media/img/apparel/jacket/COLD.RDY_Down_Jacket_Grey_FT2420_23_model.jpg`],
+        description :`A TWO-IN-ONE INSULATED JACKET WITH REMOVABLE OVERLAY FOR CONVERTIBLE STYLE.`,
         productType : `jacket`,
     },
     {   
@@ -46,6 +51,8 @@ const products =[
         color : ['black','pink','blue','white'],
         gender : ['male','female'],
         price : 150,
+        img : [`./media/img/shoes/originals/ZX_2K_Boost_Shoes_White_FV8983_01_standard.jpg`,`./media/img/shoes/originals/ZX_2K_Boost_Shoes_White_FV8983_010_standard.jpg`],
+        description :`THESE CHUNKY CITY SHOES SPARKLE AND SHINE.`,
         productType : `originals`,
     },
     {   
@@ -57,6 +64,8 @@ const products =[
         color : ['cyan','yellow','black','white'],
         gender : ['male','female'],
         price : 700,
+        img : [`./media/img/shoes/originals/Donovan_Mitchell_D.O.N._Issue_2_Crayola_Shoes_Turquoise_FW8517_01_standard.jpg`,`./media/img/shoes/originals/Donovan_Mitchell_D.O.N._Issue_2_Crayola_Shoes_Turquoise_FW8517_HM3.jpg`],
+        description :`DONOVAN MITCHELL ISSUE #2, CRAYOLA® EDITION.`,
         productType : `originals`,
     },
     {   
@@ -68,6 +77,8 @@ const products =[
         color : ['cyan','yellow','black','white'],
         gender : ['female'],
         price : 500,
+        img : [`./media/img/shoes/running/X9000L4_Shoes_Grey_FW8385_01_standard.jpg`,`./media/img/shoes/running/X9000L4_Shoes_Grey_FW8385_010_standard.jpg`],
+        description :`HIGH-TECH RUNNING SHOES WITH RESPONSIVE CUSHIONING.`,
         productType : `running`,
     },
     {   
@@ -77,8 +88,10 @@ const products =[
         brand : `adidas`,
         size : ['S','M','L','XL','XXL'],
         color : ['white','black'],
-        gender : ['female'],
+        gender : ['female','male'],
         price : 65,
+        img : [`./media/img/apparel/hoodie/Trefoil_Hoodie_Black_DV2870_01_laydown.jpg`,`./media/img/apparel/hoodie/Trefoil_Hoodie_Black_DV2870_HM1_hover.jpg`],
+        description :`A SPORTY HOODIE THAT'S MADE OF FRENCH TERRY FABRIC.`,
         productType : `hoodie`,
     },
     {   
@@ -158,7 +171,7 @@ const products =[
         color : ['orange','red','blue'],
         gender : ['male','female'],
         price : 590,
-        productType : [`shoes`, `sneakers`],
+        productType :  `sneakers`,
     },
     {   
         id: '15',
@@ -169,7 +182,7 @@ const products =[
         color : ['black',],
         gender : ['female'],
         price : 1390,
-        productType : [`shoes`,`boots`],
+        productType : `boots`,
     },
     {   
         id: '16',
@@ -310,7 +323,7 @@ const products =[
         gender : ['female'],
                 //male
         price : 630,
-        productType : `track`,
+        productType : `sandal`,
     },
     {
         id: '27',
@@ -324,7 +337,7 @@ const products =[
         gender : ['female'],
                 //male
         price : 1005,
-        productType : `track`,
+        productType : `sneaker`,
     },
     {
         id: '28',
@@ -338,7 +351,7 @@ const products =[
         gender : ['female'],
                 //male
         price : 1110,
-        productType : `triple s`,
+        productType : `sneaker`,
     },
     {
         id: '29',
@@ -352,7 +365,7 @@ const products =[
         gender : ['female'],
                 //male
         price : 840,
-        productType : `speed`,
+        productType : `sneaker`,
     },
     {
         id: '30',
@@ -366,7 +379,7 @@ const products =[
         gender : ['female'],
                 //male
         price : 950,
-        productType : `speed 2.0`,
+        productType : `sneaker`,
     },
     // do duy hieu data
     {   id: '31',
@@ -481,7 +494,7 @@ const products =[
     }, 
 ],
 // tk user + admin
-const user =[
+user =[
     {
         email : 'admin123@gmail.com',
         userName : 'admin dep trai',
