@@ -38,7 +38,7 @@ const products =[
         color : ['white','black','grey'],
         gender : ['male'],
         price : 400,
-        img : [`./media/img/apparel/jacket/COLD.RDY_Down_Jacket_Grey_FT2420_21_model.jpg`,`./media/img/apparel/jacket/COLD.RDY_Down_Jacket_Grey_FT2420_23_model.jpg`],
+        img : [`./media/img/apparel/jacket/COLD.RDY DOWN JACKET.jpg`,`./media/img/apparel/jacket/COLD.RDY DOWN JACKET 2.jpg`],
         description :`A TWO-IN-ONE INSULATED JACKET WITH REMOVABLE OVERLAY FOR CONVERTIBLE STYLE.`,
         productType : `jacket`,
     },
@@ -51,7 +51,7 @@ const products =[
         color : ['black','pink','blue','white'],
         gender : ['male','female'],
         price : 150,
-        img : [`./media/img/shoes/originals/ZX_2K_Boost_Shoes_White_FV8983_01_standard.jpg`,`./media/img/shoes/originals/ZX_2K_Boost_Shoes_White_FV8983_010_standard.jpg`],
+        img : [`./media/img/shoes/originals/ZX_2K_Boost_Shoes_White_FV8983_01_standard.jpg`,`./media/img/shoes/originals/ZX_2K_Boost_Shoes_White_FV8983_010_hover_standard.jpg`],
         description :`THESE CHUNKY CITY SHOES SPARKLE AND SHINE.`,
         productType : `originals`,
     },
@@ -77,7 +77,7 @@ const products =[
         color : ['cyan','yellow','black','white'],
         gender : ['female'],
         price : 500,
-        img : [`./media/img/shoes/running/X9000L4_Shoes_Grey_FW8385_01_standard.jpg`,`./media/img/shoes/running/X9000L4_Shoes_Grey_FW8385_010_standard.jpg`],
+        img : [`./media/img/shoes/running/X9000L4_Shoes_Grey_FW8385_01_standard.jpg`,`./media/img/shoes/running/X9000L4_Shoes_Grey_FW8385_010_hover_standard.jpg`],
         description :`HIGH-TECH RUNNING SHOES WITH RESPONSIVE CUSHIONING.`,
         productType : `running`,
     },
@@ -101,8 +101,10 @@ const products =[
         brand : `adidas`,
         size : ['S','M','L','XL','XXL'],
         color : ['white','black','blue'],
-        gender : ['male'],
+        gender : ['male'], 
         price : 40,
+        img : [`./media/img/apparel/T-shirt/WE ARE PINK LARGE FIT T-SHIRT.jpg` ],
+        description : `A LONG SLEEVE TEE FOR YEAR-ROUND WEAR`,
         productType : `shirt`,
     },
     {   
@@ -114,6 +116,8 @@ const products =[
         color : ['white','black','grey'],
         gender : ['female'],
         price : 55,
+        img :[`./media/img/apparel/tight/ADIDAS X ZOE SALDANA COLLECTION WOMEN'S TIGHT.jpg`,`./media/img/apparel/tight/ADIDAS X ZOE SALDANA COLLECTION WOMEN'S TIGHT 2.jpg`],
+        description : `SPORT-INSPIRED TIGHTS FOR THE GYM AND BEYOND.`,
         productType : `tight`,
     },
     {   
@@ -125,6 +129,8 @@ const products =[
         color : ['white','black','grey'],
         gender : ['female'],
         price : 400,
+        img :[`./media/img/appared/jacket/COLD.RDY_DOWN JACKET_2.jpg`,`./media/img/appared/jacket/COLD.RDY DOWN JACKET 2.jpg`],
+        description :'A DOWN JACKET MADE WITH RECYCLED MATERIALS.',
         productType : `jacket`,
     }, 
     // vietkhuat data
@@ -137,6 +143,8 @@ const products =[
         color : ['black'],
         gender : ['male','female'],
         price : 350,
+        img: ['./media/img/accessories/HAT/hat1.png','./media/img/accessories/HAT/hat2.png'],
+        description :`super warm and stylish wool hat`,
         productType : `hats`,
             // t-shirt, pants , suits ,trousers ,...
     },
@@ -149,6 +157,8 @@ const products =[
         color : ['white','black'],
         gender : ['female'],
         price : 750,
+        img: ['./media/img/accessories/SCARF/scarf1.jpg','./media/img/accessories/SCARF/scarf2.jpg'],
+        description :`Accessorize your best streetwear looks with this black and white scarf from VETEMENTS.`,
         productType : `scarves`,
     },
     {   
@@ -160,6 +170,8 @@ const products =[
         color : ['black'],
         gender : ['male'],
         price : 1350,
+        img: ['./media/img/apparel/RAINCOAT/raincoat1.jpg','./media/img/apparel/RAINCOAT/raincoat2.png'],
+        description :`This black and white Vetements logo print raincoat features a mid-length, long sleeves, a collar and a button-down front.`,
         productType : `coast`,
     },
     {   
@@ -171,6 +183,8 @@ const products =[
         color : ['orange','red','blue'],
         gender : ['male','female'],
         price : 590,
+        img: ['./media/img/shoes/originals/SPIKE RUNNER 2 SNEAKERS.jpg','./media/img/shoes/originals/SPIKE RUNNER 2 SNEAKERS 2.jpg'],
+        description :`ninth stage beauty is never wrong.`,
         productType :  `sneakers`,
     },
     {   
@@ -182,6 +196,8 @@ const products =[
         color : ['black',],
         gender : ['female'],
         price : 1390,
+        img: ['./media/img/shoes/BOOTS/boots1.jpg','./media/img/shoes/BOOTS/boots2.jpg'],
+        description :`Pretty boots you are also pretty alone.`,
         productType : `boots`,
     },
     {   
@@ -193,6 +209,8 @@ const products =[
         color : ['black','white'],
         gender : ['women'],
         price : 1590,
+        img: ['./media/img/apparel/jackets/jackets1.jpg','./media/img/apparel/jackets/jackets2.jpg'],
+        description :`It's warmer than your ex.`,
         productType : `jackets`,
     },
     {   
@@ -204,6 +222,8 @@ const products =[
         color : ['black'],
         gender : ['women'],
         price : 770,
+        img: ['./media/img/apparel/hoodie/hooded1.jpg','./media/img/apparel/hoodie/hooded2.jpg'],
+        description :`The Crystal-Embellished Hooded Sweatshirt is crafted from a cotton-blend fabrication in a jersey weave featuring dropped shoulder seams, drawstring hood, front crystal-embellished logo and ribbed trims.`,
         productType : `hoodie`,
     },
     {   
@@ -215,6 +235,8 @@ const products =[
         color : ['black',],
         gender : ['unisex'],
         price : 850,
+        img: ['./media/img/accessories/BAG/BLACK LOGO BACKPACK.jpg','./media/img/accessories/BAG/BLACK LOGO BACKPACK 2.jpg'],
+        description :`alo alo backpack here backpack here.`,
         productType : `bags`,
     },
     {   
@@ -226,6 +248,8 @@ const products =[
         color : ['black'],
         gender : ['unisex'],
         price : 190,
+        img: ['./media/img/apparel/T-shirt/IT COSTS COTTON T-SHIRT.jpg','./media/img/apparel/T-shirt/IT COSTS COTTON T-SHIRT 2.jpg'],
+        description :`Nice shirt to go fishing.`,
         productType : `t-shirts`,
     },
     {   
@@ -238,6 +262,8 @@ const products =[
         gender : ['unisex'],
         material : ['brass'],
         price : 300,
+        img: ['./media/img/accessories/RING/ring1.jpg','./media/img/accessories/RING/ring2.jpg'],
+        description :`smooth luxury ring.`,
         productType : `ring`,
     }, 
     //ng bao long data
@@ -253,6 +279,7 @@ const products =[
         gender : ['male'],
                 // female
         price : 950,
+        img:[`./media/img/apparel/hoodie/3.jpg`,`./media/img/apparel/hoodie/3.jpg`],
         productType : `hoodie`,
     },
     {
@@ -267,6 +294,7 @@ const products =[
         gender : ['male'],
                 // female
         price : 510,
+        img:[`./media/img/apparel/T-shirts/WE ARE PINK LARGE FIT T-SHIRT.jpg`,`./media/img/apparel/T-shirts/WE ARE PINK LARGE FIT T-SHIRT 2.jpg`],
         productType : `t-shirt`,
     },
     {
@@ -279,7 +307,7 @@ const products =[
         size : [`no size`],
         color : ['black','while'],
         gender : ['female'],
-                
+        img:[`./media/img/accessories/BAG/1-1.jpg`,`./media/img/accessories/BAG/1-2.jpg`],        
         price : 2650,
         productType : `bag`,
     },
@@ -293,7 +321,7 @@ const products =[
         size : [`no size`],
         color : ['black','grey'],
         gender : ['female'],
-                
+        img:[`./media/img/accessories/BAG/3.jpg`,`./media/img/accessories/BAG/3-2.jpg`,`./media/img/accessories/BAG/3-3.jpg`],        
         price : 2250,
         productType : `bag`,
     },
@@ -307,7 +335,7 @@ const products =[
         size : [`no size`],
         color : ['black','blue','red'],
         gender : ['female'],
-                
+        img:[`./media/img/accessories/BAG/2.jpg`,`./media/img/accessories/BAG/2-2.jpg`],        
         price : 1980,
         productType : `bag`,
     },
@@ -323,6 +351,7 @@ const products =[
         gender : ['female'],
                 //male
         price : 630,
+        img:[`./media/img/shoes/sandal/sandal 1.jpg`,`./media/img/shoes/sandal/sandal 2.jpg`],
         productType : `sandal`,
     },
     {
@@ -337,6 +366,7 @@ const products =[
         gender : ['female'],
                 //male
         price : 1005,
+        img:[`./media/img/shoes/originals/track 1.jpg`,`./media/img/shoes/originals/track 2.jpg`,`./media/img/shoes/originals/track 3.jpg`],
         productType : `sneaker`,
     },
     {
@@ -351,6 +381,7 @@ const products =[
         gender : ['female'],
                 //male
         price : 1110,
+        img:[`./media/img/shoes/originals/triple 1.jpg`,`./media/img/shoes/originals/triple 2.jpg`,`./media/img/shoes/originals/triple 3.jpg`,`./media/img/shoes/originals/triple 4.jpg`],
         productType : `sneaker`,
     },
     {
@@ -365,6 +396,8 @@ const products =[
         gender : ['female'],
                 //male
         price : 840,
+        img:[`./media/img/shoes/originals/speed 1.jpg`,`./media/img/shoes/originals/speed 2.jpg`,`./media/img/shoes/originals/speed 3.jpg`],
+
         productType : `sneaker`,
     },
     {
@@ -379,6 +412,8 @@ const products =[
         gender : ['female'],
                 //male
         price : 950,
+        img:[`./media/img/shoes/originals/speed 2-1.jpg`,`./media/img/shoes/originals/speed 2-2.jpg`,`./media/img/shoes/originals/speed 2-3.jpg`,`./media/img/shoes/originals/speed 2-4.jpg`,`./media/img/shoes/originals/speed 2-5.jpg`],
+
         productType : `sneaker`,
     },
     // do duy hieu data
@@ -387,10 +422,11 @@ const products =[
         name : `Nike Sportwear`,
         brand : `Nike`,
         size : ['S','M','L','XL','XXL'],
-        color : ['white','black','grey'],
-        gender : ['male','female'],
-                 
+        color : ['white','grey'],
+        gender : ['male','female'],        
         price : 48,
+        img :[`./media/img/apparel/T-shirt/Nike Sportwear.jpg`,`./media/img/apparel/T-shirt/Nike Sportwear 2.jpg `],
+        description: 'The Nike Sportswear T-Shirt offers a splash of retro style for a nostalgic look with a soft cotton feel.',
         productType : `T- Shirt`,
            
     },
@@ -402,6 +438,8 @@ const products =[
         color : ['white','black','grey',],
         gender : ['male'],
         price : 150,
+        img:[`./media/img/apparel/Polo/Nike Dri-FIT Player.jpg`],
+        description :'Nike Dri-FIT Player Polo kết hợp các chi tiết chu đáo, chẳng hạn như lớp lót chambray và các nút được trang trí bằng quả lê, với vải thoáng khí, thấm mồ hôi để tạo ra vẻ ngoài cổ điển vượt trội hơn hẳn. ',
         productType : `Polo`,
     },
     {   
@@ -413,6 +451,8 @@ const products =[
         color : ['white','black','grey'],
         gender : ['famale'],
         price : 220,
+        img:[`./media/img/apparel/T-shirt/Short-Sleeve Running Top.jpg`],
+        description:'The Nike Dri-FIT Wild Run T-Shirt delivers a soft feel with sweat-wicking technology for everyday wear.',
         productType : `T-shirt`,
     },
     {   
@@ -424,6 +464,8 @@ const products =[
         color : ['black','pink','blue','white'],
         gender : ['male','female'],
         price : 1050,
+        img:[`./media/img/shoes/originals/Nike Air Force 1 Crater.jpg`,`./media/img/shoes/originals/Nike Air Force 1 Crater 2.jpg`],
+        description :'The sneakers that helped define street style are re-imagined with Crater Foam,',
         productType : `originals`,
     },
     {   
@@ -435,17 +477,21 @@ const products =[
         color : ['cyan','yellow','black','white'],
         gender : ['male','female'],
         price : 900,
+        img:[`./media/shoes/originals/Nike Air Force 1 React LV8.jpg`,`./media/shoes/originals/Nike Air Force 1 React LV8 2.jpg`],
+        description :'The Nike Air Force 1 React LV8 WW puts a fresh spin on the basketball OG with crisp leather, bold colours and the perfect amount of flash',
         productType : `originals`,
     },
     {
         id: '36',
         category : `shoes`,
-        name : `Nike Tạnun`,
+        name : `Nike Tanjun`,
         brand : `Nike`,
         size : [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12],
-        color : ['cyan','yellow','black','white'],
+        color : ['black','white'],
         gender : ['male'],
         price : 1500,
+        img:[`./media/img/shoes/running/Nike Tanjun.jpg`,`./media/img/shoes/running/Nike Tanjun 2.jpg`],
+        description:'It has a modern design that is convenient and comfortable, with a sleek upper that gives a clean look.',
         productType : `running`,
     },
     {   
@@ -457,6 +503,8 @@ const products =[
         color : ['white','black'],
         gender : ['male'],
         price : 780,
+        img:[`./media/img/apparel/hoodie/Nike BETRUE.jpg`,`./media/img/apparel/hoodie/Nike BETRUE 2.jpg`],
+        description:'Warm and soft, the Nike BETRUE Hoodie delivers the coverage you want with a colourful graphic celebrating Pride.',
         productType : `hoodie`,
     },
     {   
@@ -468,6 +516,8 @@ const products =[
         color : ['white','black','blue'],
         gender : ['male','female'],
         price : 468,
+        img:[`./media/img/apparel/jacket/Nike Sport Tech Pack.jpg`,`./media/img/apparel/jacket/Nike Sport Tech Pack 2.jpg`],
+        description:'This full-zip is all about our innovative premium fleece that is soft, lightweight and warm.',
         productType : `Jacket`,
     },
     {   
@@ -479,6 +529,8 @@ const products =[
         color : ['Track Rede'],
         gender : ['female'],
         price : 860,
+        img:[`./media/img/apparel/Dress/Nike SportSwear.img`,`./media/img/apparel/Dress/Nike SportSwear 2.img`],
+        description:'Made from soft cotton jersey, the Nike Sportswear Printed Dress sets you up for comfort and summer fun with a vibrant rainbow stripe print.',
         productType : `Dress`,
     },
     {   
@@ -490,6 +542,8 @@ const products =[
         color : ['white','black','grey'],
         gender : ['male'],
         price : 400,
+        img:[`./media/img/apparel/pants/Nike Essential.jpg`,`./media/img/apparel/pants/Nike Essential 2.jpg`],
+        description:'made with a dual-fabric construction, giving you the comfort of warm-up trousers and the compression of tights at the same time. ',
         productType : `pants `,
     }, 
 ],
