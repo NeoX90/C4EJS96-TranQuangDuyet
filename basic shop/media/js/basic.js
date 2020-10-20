@@ -1,4 +1,4 @@
-
+let showNike = document.getElementById('nike');
 let mainPro= document.getElementById("showList");
 function soProduct(img, name, description, price)
 {
@@ -16,8 +16,31 @@ function soProduct(img, name, description, price)
     `
     )
 }
-mainPro.innerHTML = '';
-for(let i=0; i< products.length; i++)
-{
-    soProduct(products[i].img[0], products[i].name, products[i].description, products[i].price);
+// mainPro.innerHTML = '';
+// for(let i=0; i< products.length; i++)
+// {
+    // soProduct(products[i].img[0], products[i].name, products[i].description, products[i].price);
+// }
+
+// console.log(products.length)
+// function searchNike(){
+//   for(let i = 0 ; i < products.length ; i++){
+//     if(products[i].brand == 'Nike'){
+//       soProduct(products[i].img[0], products[i].name, products[i].description, products[i].price);
+//     }
+//   }
+// }
+
+// tìm kiếm theo brand
+showNike.addEventListener('click',()=>{
+  for(let i = 0 ; i < products.length ; i++){
+    if(products[i].brand == 'Nike'){
+      soProduct(products[i].img[0], products[i].name, products[i].description, products[i].price);
+    }
+  }
+})
+
+// tìm kiếm theo tên
+for(let i = 0 ; i < products.length ;i++){
+  
 }

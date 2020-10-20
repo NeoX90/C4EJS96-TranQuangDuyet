@@ -189,7 +189,7 @@ const products =[
     },
     {   
         id: '15',
-        category : `shoes`,
+        category : `shoes`, 
         name : `BOOMERANG PATENT LEATHER ANKLE BOOTS`,
         brand : `VETEMENTS`,
         size : [7,7.5,8,8.5,9,9.5,10,10.5,11,11.5,12],
