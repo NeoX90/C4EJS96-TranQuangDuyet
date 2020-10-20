@@ -1,5 +1,7 @@
 let showNike = document.getElementById('nike');
 let mainPro= document.getElementById("showList");
+let search_Text = document.getElementById("search");
+let search_btn = document.getElementById("search-btn");
 function soProduct(img, name, description, price)
 {
     mainPro.insertAdjacentHTML('beforeEnd', 
@@ -41,6 +43,21 @@ showNike.addEventListener('click',()=>{
 })
 
 // tìm kiếm theo tên
-for(let i = 0 ; i < products.length ;i++){
-  
+search_btn.addEventListener('click',()=>{
+
+})
+
+function getInputValue(){
+  // Selecting the input element and get its value 
+  var inputVal = search_Text.value;
+  for(let i = 0 ; i < products.length ;i++){
+    let x = products[i].name.split(' ')
+    for(let j = 0 ; j < x.length ; j++){
+      if(x[j] == inputVal){
+        soProduct(products[i].img[0], products[i].name, products[i].description, products[i].price);
+      }
+    }
+  }
+  // Displaying the value
+  // alert(inputVal);
 }
