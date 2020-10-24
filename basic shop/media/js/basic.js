@@ -2,6 +2,27 @@ let showNike = document.getElementById('nike');
 let showList= document.getElementById("showList");
 let search_Text = document.getElementById("search");
 let search_btn = document.getElementById("search-btn");
+let x = document.getElementsByClassName("silderItems");
+//chuyển đọng trái phải silder show
+let slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+
+}
+
+function showDivs(n) {
+  let i;
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+    console.log(x[i])
+  }
+    x[slideIndex-1].style.display = "block";  
+}
+//show sp ra html
 function soProduct(img, name, description, price)
 {
     showList.insertAdjacentHTML('beforeEnd', 
@@ -30,12 +51,12 @@ function searchResult (name){
     `
   )
 }
-
-showList.innerHTML = '';
-for(let i=0; i< products.length; i++)
-{
-    soProduct(products[i].img[0], products[i].name, products[i].description, products[i].price);
-}
+// show sản phẩm ra từ đầu
+// showList.innerHTML = '';
+// for(let i=0; i< products.length; i++)
+// {
+//     soProduct(products[i].img[0], products[i].name, products[i].description, products[i].price);
+// }
 
 // tìm kiếm theo brand
 showNike.addEventListener('click',()=>{
@@ -68,11 +89,15 @@ function liveSearch(){
     for(let i =0; i<products.length ; i++){
       a = products[i].name;
       if(a.toUpperCase().indexOf((search_Text.value.toUpperCase())) > -1){
-        fillterUl.innerHTML += `<li style = "display : block;">${a}</li>`
+        fillterUl.innerHTML += `<li style = "display : block; ">${a}</li>`
       }
       else {
-        fillterUl.innerHTML += `<li style = "display : none;">${a}</li>`
+        fillterUl.innerHTML += `<li style = "display : none; ">${a}</li>`
       }
     }
   }
 }
+// sắp xếp theo giá 
+
+
+

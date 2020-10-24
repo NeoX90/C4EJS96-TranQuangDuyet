@@ -3,32 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./media/css/style.css">
+    <title>Nike Shop</title>
 </head>
 <body>
     <!-- header -->
+    <div class="container">
+        <!-- log in -->
+        <div class="logIn" style="display: flex;">
+                <div ><button id="aboutUs" class="logInItems">About us</button></div>
+                <div ><button id="signIn" class="logInItems">Sign In</button></div>
+        </div>
+        <!-- log in -->
 
+        <div class="row" id="logoBar" style="display: flex;">
+            <div class="col-4" style="width: 30%;"><div id="logo" ><img src="./media/img/logo + img/logoNike.png" style="height: 20px;" alt=""></div></div>
+            <div class="col-8" style="width: 70%; display: flex;">
+                <div id="menu" class="col-2" style="width: 50%;">
+                    <button class="btn_menu" id="proMen">Men</button>
+                    <button class="btn_menu" id="proWoman">Women</button>
+                    <button class="btn_menu" id="apparel">Apparel</button>
+                    <button class="btn_menu" id="shoes">Shoes</button>
+                    <button class="btn_menu" id="accessories">Accessories</button>
+                </div>
+                <div class="col-2" style="width: 50%;">
+                    <div style="margin-left: 0px;">
+                        <input id="search" type="text"   placeholder="search" onkeyup="liveSearch()">
+                        <button type="button" onclick="getInputValue()"><i class="fa fa-search"></i></button>
+                        <button id="shopCart"><i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                   
+                </div>
+            </div>
+            
+        </div>
+        <div class="sliderShow">
+            <div id="menuItems">
+                <img src="./media/img/logo + img/adidas.jpg" class="siderItems" style="width: 100%;" alt="">
+                <img src="./media/img/logo + img/balenciaga.jpg" class="siderItems" style="width: 100%;" alt="">
+                <img src="./media/img/logo + img/nike.jpg" class="siderItems" style="width: 100%;" alt="">
+                <img src="./media/img/logo + img/vetements.jpg" class="siderItems" style="width: 100%;" alt="">
+            </div>
+            <button class="btn_left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="btn_right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+    </div>
     <!-- header -->
     <!-- main -->
-
-    <div >
-        <input id="search" type="text"  placeholder="search" onkeyup="liveSearch()">
-        <button type="button" onclick="getInputValue()">Search</button>
-        <!-- <div class="suggestion-holder"  ></div> -->
-    </div>
     <div >
         <ul id="filter-ul">
             
         </ul>
     </div>
 
-    <button id="nike" >Nike</button>
+    <!-- <button id="nike" >Nike</button> -->
     <div class="main">
-        <!-- <div id="product">
+        <div id="showList">
 
-            
-        </div> --> 
-        <div id="showList"></div>
+        </div>
     </div>
     <!-- main -->
     <div class="footer"></div>

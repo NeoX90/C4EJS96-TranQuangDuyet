@@ -1,7 +1,36 @@
 *{
     box-sizing: border-box;
 }
-#showList{
-    display: flex;
-    /* flex-wrap: wrap; */
+
+.container{
+    height:200px;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* display: ; */
+    z-index: -1;
 }
+.logIn{
+    right: 0px;
+    top :0;
+    
+}
+.logInItems{
+    
+    background-color: white;
+    border: none;
+}
+.btn_menu{
+    background-color: white;
+    border: none;
+}
+#menu{
+
+}
+#menuItems .silderItems{
+    display: none;
+    width: 50%;
+}
+#showList{
+    
+    width: 70%;
+} 

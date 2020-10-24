@@ -1,6 +1,6 @@
 const products =[
     {   
-        id : `O1`,
+        id : `01`,
         category : `apparel`,
                 // + shoes 
                 // + accessories
