@@ -1,7 +1,19 @@
 *{
     box-sizing: border-box;
 }
-
+.logIn{
+    text-align: end;
+}
+.mySlides{
+    display: none;
+}
+#prev {
+    margin-left: 5%;
+    
+}
+#next{
+    margin-right: 5%;
+}
 .container{
     height:200px;
     margin-left: 5%;
@@ -13,6 +25,13 @@
     right: 0px;
     top :0;
     
+}
+#logo{
+    text-align: center;
+}
+#logoBar{
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 .logInItems{
     
@@ -30,7 +49,17 @@
     display: none;
     width: 50%;
 }
+#btn_left{
+    text-align: center;
+}
 #showList{
     
     width: 70%;
 } 
+.sliderShow{
+    position: relative;
+    margin-top: 0px;
+}
+.main{
+    margin-top: 10px;
+}

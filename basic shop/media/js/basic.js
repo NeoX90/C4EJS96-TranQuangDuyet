@@ -4,24 +4,26 @@ let search_Text = document.getElementById("search");
 let search_btn = document.getElementById("search-btn");
 let x = document.getElementsByClassName("silderItems");
 //chuyển đọng trái phải silder show
-let slideIndex = 1;
+var slideIndex = 1;
 showDivs(slideIndex);
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
-
 }
 
 function showDivs(n) {
-  let i;
+  var i;
+  var x = document.getElementsByClassName("mySlides");
   if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
+  if (n < 1) {slideIndex = x.length} ;
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-    console.log(x[i])
+    x[i].style.display = "none";
   }
-    x[slideIndex-1].style.display = "block";  
+  x[slideIndex-1].style.display = "block";
+  
 }
+// auto run slider
+
 //show sp ra html
 function soProduct(img, name, description, price)
 {
@@ -89,7 +91,7 @@ function liveSearch(){
     for(let i =0; i<products.length ; i++){
       a = products[i].name;
       if(a.toUpperCase().indexOf((search_Text.value.toUpperCase())) > -1){
-        fillterUl.innerHTML += `<li style = "display : block; ">${a}</li>`
+        fillterUl.innerHTML += `<li style = "display :  block; background-color: seashell;">${a}</li>`
       }
       else {
         fillterUl.innerHTML += `<li style = "display : none; ">${a}</li>`
