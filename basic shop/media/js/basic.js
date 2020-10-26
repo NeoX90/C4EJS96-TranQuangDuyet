@@ -1,4 +1,9 @@
 let showNike = document.getElementById('nike');
+let showAdidas = document.getElementById('adidas');
+let showBalen = document.getElementById('balenciaga');
+let showVete = document.getElementById('vetements');
+let showMen = document.getElementById('proMen');
+let showWoman = document.getElementById('proWomen');
 let showList= document.getElementById("showList");
 let search_Text = document.getElementById("search");
 let search_btn = document.getElementById("search-btn");
@@ -25,15 +30,14 @@ function showDivs(n) {
 // auto run slider
 
 //show sp ra html
-function soProduct(img, name, description, price)
+function soProduct(img, name, price)
 {
     showList.insertAdjacentHTML('beforeEnd', 
     `
     <div class="productItem">
-      <div class="productImg"><img src="${img}" alt="" style = "display :flex"></div>
+      <div class="productImg"><img src="${img}" alt="" style = "display :flex "></div>
       <div class="productTit">
-        <b>${name}</b> <br>
-        <span>${description}</span>
+        <b>${name}</b>
       </div>
       <div class="productPrice">${price}</div>
       <button class="addPro">Add to cart</button>
@@ -47,29 +51,95 @@ function searchResult (name){
   `
     <div>
       <ul id="filter-ul">
-        <li class="filter">${name}</li>
+        <li class="filter" >${name}</li>
       </ul>
     </div>
     `
   )
 }
 // show sản phẩm ra từ đầu
-// showList.innerHTML = '';
-// for(let i=0; i< products.length; i++)
-// {
-//     soProduct(products[i].img[0], products[i].name, products[i].description, products[i].price);
-// }
+showList.innerHTML = '';
+for(let i=0; i< products.length; i++)
+{
+  // , products[i].description
+    soProduct(products[i].img[0], products[i].name,products[i].price);
+    console.log(products[i].price)
+}
 
-// tìm kiếm theo brand
+// tìm kiếm theo brand + gender
+// nike
 showNike.addEventListener('click',()=>{
   showList.innerHTML = '';
   for(let i = 0 ; i < products.length ; i++){
     if(products[i].brand == 'Nike'){
-      soProduct(products[i].img[0], products[i].name, products[i].description, products[i].price);
+
+      soProduct(products[i].img[0], products[i].name, products[i].price);
       
     }
   }
 })
+// adidas
+showAdidas.addEventListener('click',()=>{
+  showList.innerHTML = '';
+  for(let i = 0 ; i < products.length ; i++){
+    if(products[i].brand == 'adidas'){
+
+      soProduct(products[i].img[0], products[i].name, products[i].price);
+      
+    }
+  }
+})
+// balenciaga
+showBalen.addEventListener('click',()=>{
+  showList.innerHTML = '';
+  for(let i = 0 ; i < products.length ; i++){
+    if(products[i].brand == 'balenciaga'){
+
+      soProduct(products[i].img[0], products[i].name, products[i].price);
+      
+    }
+  }
+})
+// vetements
+showVete.addEventListener('click',()=>{
+  showList.innerHTML = '';
+  for(let i = 0 ; i < products.length ; i++){
+
+    if(products[i].brand == 'VETEMENTS'){
+
+      soProduct(products[i].img[0], products[i].name, products[i].price);
+      
+    }
+  }
+})
+// show products for men
+showMen.addEventListener('click',()=>{
+  showList.innerHTML = '';
+  // alert(products[1].gender)
+  for(let i = 0 ; i < products.length ; i++){
+    for(let j = 0 ; j <products[i].gender.length ; j++){
+      if(products[i].gender[j] == 'male'){
+
+        soProduct(products[i].img[0], products[i].name, products[i].price);
+        
+      }
+    }
+  }
+})
+// show products for women
+showWoman.addEventListener('click',()=>{
+  showList.innerHTML = '';
+  for(let i = 0 ; i < products.length ; i++){
+    for(let j = 0 ; j <products[i].gender.length ; j++){
+      if(products[i].gender[j] == 'female'){
+
+        soProduct(products[i].img[0], products[i].name, products[i].price);
+        
+      }
+    }
+  }
+})
+
 // tìm kiếm theo tên
 function getInputValue(){
   // Selecting the input element and get its value 
@@ -78,7 +148,7 @@ function getInputValue(){
   for(let i = 0 ; i < products.length ;i++){
     let x = products[i].name.toLowerCase()
       if(x == inputVal){
-        soProduct(products[i].img[0], products[i].name, products[i].description, products[i].price);
+        soProduct(products[i].img[0], products[i].name, products[i].price);
         searchResult(products[i].name);
     }
   }
@@ -91,7 +161,7 @@ function liveSearch(){
     for(let i =0; i<products.length ; i++){
       a = products[i].name;
       if(a.toUpperCase().indexOf((search_Text.value.toUpperCase())) > -1){
-        fillterUl.innerHTML += `<li style = "display :  block; background-color: seashell;">${a}</li>`
+        fillterUl.innerHTML += `<li style = "display :  block; background-color: seashell; border-top: solid;"">${a}</li>`
       }
       else {
         fillterUl.innerHTML += `<li style = "display : none; ">${a}</li>`
@@ -100,6 +170,5 @@ function liveSearch(){
   }
 }
 // sắp xếp theo giá 
-
 
 
