@@ -1,23 +1,23 @@
-const products =[
+const products = [
     {   
-        id : `01`,
-        category : `apparel`,
+        id: 1,
+        category: `apparel`,
                 // + shoes 
                 // + accessories
-        name : `BADGE OF SPORT FRENCH TERRY PANTS`,
-        brand : `adidas`,
-        size : ['S','M','L','XL','XXL'],
-        color : ['white','black','grey'],
-        gender : ['male'],
+        name: `BADGE OF SPORT FRENCH TERRY PANTS`,
+        brand: `adidas`,
+        size: ['S','M','L','XL','XXL'],
+        color: ['white','black','grey'],
+        gender: ['male'],
                 // female
-        price : 50,
-        img : [`./media/img/apparel/pants/Badge_of_Sport_French_Terry_Pants_Black_GC7344_21_model.jpg`,`./media/img/apparel/pants/Badge_of_Sport_French_Terry_Pants_Black_GC7344_22_model.jpg`],
-        description :`CASUAL SWEAT PANTS WITH A FLASH OF SPORT STYLE.`,
-        productType : `pants`,
+        price: 50,
+        img: [`./media/img/apparel/pants/Badge_of_Sport_French_Terry_Pants_Black_GC7344_21_model.jpg`,`./media/img/apparel/pants/Badge_of_Sport_French_Terry_Pants_Black_GC7344_22_model.jpg`],
+        description:`CASUAL SWEAT PANTS WITH A FLASH OF SPORT STYLE.`,
+        productType: `pants`,
             // t-shirt, pants , suits ,trousers ,...
     },
     {   
-        id: '02',
+        id: 2,
         category : `apparel`,
         name : `CONTINENT CAMO CITY LONG SHORTS`,
         brand : `adidas`,
@@ -30,20 +30,20 @@ const products =[
         productType : `shorts`,
     },
     {   
-        id: '03',
+        id: 3,
         category : `apparel`,
         name : `COLD.RDY DOWN JACKET`,
         brand : `adidas`,
         size : ['S','M','L','XL','XXL'],
         color : ['white','black','grey'],
-        gender : ['male'],
+        gender : ['male','female'],
         price : 400,
-        img : [`./media/img/apparel/jacket/COLD.RDY DOWN JACKET.jpg`,`./media/img/apparel/jacket/COLD.RDY DOWN JACKET 2.jpg`],
+        img : [`./media/img/apparel/jacket/COLD.RDY DOWN JACKET.jpg`,`./media/img/apparel/jacket/COLD.RDY_DOWN JACKET_2.jpg`],
         description :`A TWO-IN-ONE INSULATED JACKET WITH REMOVABLE OVERLAY FOR CONVERTIBLE STYLE.`,
         productType : `jacket`,
     },
     {   
-        id: '04',
+        id: 4,
         category : `shoes`,
         name : `ZX 2K BOOST SHOES`,
         brand : `adidas`,
@@ -56,7 +56,7 @@ const products =[
         productType : `originals`,
     },
     {   
-        id: '05',
+        id: 5,
         category : `shoes`,
         name : `DONOVAN MITCHELL D.O.N. ISSUE #2 CRAYOLA SHOES`,
         brand : `adidas`,
@@ -69,7 +69,7 @@ const products =[
         productType : `originals`,
     },
     {   
-        id: '06',
+        id: 6,
         category : `shoes`,
         name : `X9000L4 SHOES`,
         brand : `adidas`,
@@ -82,7 +82,7 @@ const products =[
         productType : `running`,
     },
     {   
-        id: '07',
+        id: 7,
         category : `apparel`,
         name : `TREFOIL HOODIE`,
         brand : `adidas`,
@@ -95,7 +95,7 @@ const products =[
         productType : `hoodie`,
     },
     {   
-        id: '08',
+        id: 8,
         category : `apparel`,
         name : `ADIDAS X ZOE SALDANA COLLECTION WOMEN'S LONG SLEEVE SHIRT`,
         brand : `adidas`,
@@ -103,12 +103,12 @@ const products =[
         color : ['white','black','blue'],
         gender : ['male'], 
         price : 40,
-        img : [`./media/img/apparel/T-shirt/WE ARE PINK LARGE FIT T-SHIRT.jpg` ],
+        img : [`./media/img/apparel/T-shirt/adidas_x_Zoe_Saldana_Collection_Women's_Long_Sleeve_Shirt_White_GG3403_21_model.jpg`,`./media/img/apparel/T-shirt/adidas_x_Zoe_Saldana_Collection_Women's_Long_Sleeve_Shirt_White_GG3403_23_hover_model.jpg` ],
         description : `A LONG SLEEVE TEE FOR YEAR-ROUND WEAR`,
         productType : `shirt`,
     },
     {   
-        id: '09',
+        id: 9,
         category : `apparel`,
         name : `ADIDAS X ZOE SALDANA COLLECTION WOMEN'S TIGHT`,
         brand : `adidas`,
@@ -121,21 +121,21 @@ const products =[
         productType : `tight`,
     },
     {   
-        id: '10',
+        id: 10,
         category : `apparel`,
-        name : `COLD.RDY DOWN JACKET`,
+        name : `TAN CLUB HOME PANTS`,
         brand : `adidas`,
         size : ['S','M','L','XL','XXL'],
-        color : ['white','black','grey'],
+        color : ['white','black'],
         gender : ['female'],
-        price : 400,
-        img :[`./media/img/appared/jacket/COLD.RDY_DOWN JACKET_2.jpg`,`./media/img/appared/jacket/COLD.RDY DOWN JACKET 2.jpg`],
-        description :'A DOWN JACKET MADE WITH RECYCLED MATERIALS.',
-        productType : `jacket`,
+        price : 60,
+        img :[`./media/img/apparel/pants/TAN_Club_Home_Pants_Black_FS5058_21_model.jpg`,`./media/img/apparel/pants/TAN_Club_Home_Pants_Black_FS5058_25_model.jpg`],
+        description :'TAPERED PANTS INSPIRED BY SOCCER STYLE.',
+        productType : `pants`,
     }, 
     // vietkhuat data
     {   
-        id: '11',
+        id: 11,
         category : `accessories`,
         name : `GOTHIC EMBROIDERED HAT`,
         brand : `VETEMENTS`,
@@ -143,13 +143,13 @@ const products =[
         color : ['black'],
         gender : ['male','female'],
         price : 350,
-        img: ['./media/img/accessories/HAT/hat1.png','./media/img/accessories/HAT/hat2.png'],
+        img: ['./media/img/accessories/HAT/hat1.jpg','./media/img/accessories/HAT/hat2.jpg'],
         description :`super warm and stylish wool hat`,
         productType : `hats`,
             // t-shirt, pants , suits ,trousers ,...
     },
     {   
-        id: '12',
+        id: 12,
         category : `accessories`,
         name : `LOGO MERINO-WOOL SCARF`,
         brand : `VETEMENTS`,
@@ -162,7 +162,7 @@ const products =[
         productType : `scarves`,
     },
     {   
-        id: '13',
+        id: 13,
         category : `apparel`,
         name : `LOGO PRINT RAINCOAT`,
         brand : `VETEMENTS`,
@@ -175,7 +175,7 @@ const products =[
         productType : `coast`,
     },
     {   
-        id: '14',
+        id: 14,
         category : `shoes,`,
         name : `SPIKE RUNNER 2 SNEAKERS`,
         brand : `VETEMENTS`,
@@ -188,7 +188,7 @@ const products =[
         productType :  `sneakers`,
     },
     {   
-        id: '15',
+        id: 15,
         category : `shoes`, 
         name : `BOOMERANG PATENT LEATHER ANKLE BOOTS`,
         brand : `VETEMENTS`,
@@ -196,12 +196,12 @@ const products =[
         color : ['black',],
         gender : ['female'],
         price : 1390,
-        img: ['./media/img/shoes/BOOTS/boots1.jpg','./media/img/shoes/BOOTS/boots2.jpg'],
+        img: ['./media/img/shoes/BOOTS/BOOMERANG PATENT LEATHER ANKLE BOOTS.jpg','./media/img/shoes/BOOTS/BOOMERANG PATENT LEATHER ANKLE BOOTS 2.jpg'],
         description :`Pretty boots you are also pretty alone.`,
         productType : `boots`,
     },
     {   
-        id: '16',
+        id: 16,
         category : `apparel`,
         name : `REVERSIBLE WHITE & BLACK BOMBER JACKET`,
         brand : `VETEMENTS`,
@@ -209,12 +209,12 @@ const products =[
         color : ['black','white'],
         gender : ['women'],
         price : 1590,
-        img: ['./media/img/apparel/jackets/jackets1.jpg','./media/img/apparel/jackets/jackets2.jpg'],
+        img: ['./media/img/apparel/jacket/jacket1.jpg','./media/img/apparel/jacket/jacket2.jpg'],
         description :`It's warmer than your ex.`,
         productType : `jackets`,
     },
     {   
-        id: '17',
+        id: 17,
         category : `apparel`,
         name : `CRYSTAL-EMBELLISHED HOODED SWEATSHIRT IN BLACK`,
         brand : `VETEMENTS`,
@@ -227,7 +227,7 @@ const products =[
         productType : `hoodie`,
     },
     {   
-        id: '18',
+        id: 18,
         category : `accessories`,
         name : `BLACK LOGO BACKPACK`,
         brand : `VETEMENTS`,
@@ -240,7 +240,7 @@ const products =[
         productType : `bags`,
     },
     {   
-        id: '19',
+        id: 19,
         category : `apparel`,
         name : `IT COSTS COTTON T-SHIRT`,
         brand : `VETEMENTS`,
@@ -253,7 +253,7 @@ const products =[
         productType : `t-shirts`,
     },
     {   
-        id: '20',
+        id: 20,
         category : `accessories`,
         name : `LOGO-ENGRAVED SIGNET RING`,
         brand : `VETEMENTS`,
@@ -268,7 +268,7 @@ const products =[
     }, 
     //ng bao long data
     {
-        id: '21',
+        id: 21,
         category : `apparel`,
                 // + shoes 
                 // + accessories
@@ -283,7 +283,7 @@ const products =[
         productType : `hoodie`,
     },
     {
-        id: '22',
+        id: 22,
         category : `apparel`,
                 // + shoes 
                 // + accessories
@@ -294,11 +294,11 @@ const products =[
         gender : ['male'],
                 // female
         price : 510,
-        img:[`./media/img/apparel/T-shirts/WE ARE PINK LARGE FIT T-SHIRT.jpg`,`./media/img/apparel/T-shirts/WE ARE PINK LARGE FIT T-SHIRT 2.jpg`],
-        productType : `t-shirt`,
+        img:[`./media/img/apparel/T-shirt/WE ARE PINK LARGE FIT T-SHIRT.jpg`,`./media/img/apparel/T-shirt/WE ARE PINK LARGE FIT T-SHIRT 2.jpg`],
+        productType : `T-shirt`,
     },
     {
-        id: '23',
+        id: 23,
         category : `accessories`,
                 // + shoes 
                 // + apparel
@@ -307,12 +307,12 @@ const products =[
         size : [`no size`],
         color : ['black','while'],
         gender : ['female'],
-        img:[`./media/img/accessories/BAG/1-1.jpg`,`./media/img/accessories/BAG/1-2.jpg`],        
+        img:[`./media/img/accessories/BAG/bag 1-1.jpg`,`./media/img/accessories/BAG/bag 1-2.jpg`],        
         price : 2650,
         productType : `bag`,
     },
     {
-        id: '24',
+        id: 24,
         category : `accessories`,
                 // + shoes 
                 // + apparel
@@ -321,12 +321,12 @@ const products =[
         size : [`no size`],
         color : ['black','grey'],
         gender : ['female'],
-        img:[`./media/img/accessories/BAG/3.jpg`,`./media/img/accessories/BAG/3-2.jpg`,`./media/img/accessories/BAG/3-3.jpg`],        
+        img:[`./media/img/accessories/BAG/bag 3.jpg`,`./media/img/accessories/BAG/bag 3-2.jpg`,`./media/img/accessories/BAG/bag 3-3.jpg`],        
         price : 2250,
         productType : `bag`,
     },
     {
-        id: '25',
+        id: 25,
         category : `accessories`,
                 // + shoes 
                 // + apparel
@@ -335,12 +335,12 @@ const products =[
         size : [`no size`],
         color : ['black','blue','red'],
         gender : ['female'],
-        img:[`./media/img/accessories/BAG/2.jpg`,`./media/img/accessories/BAG/2-2.jpg`],        
+        img:[`./media/img/accessories/BAG/bag 2.jpg`,`./media/img/accessories/BAG/bag 2-2.jpg`],        
         price : 1980,
         productType : `bag`,
     },
     {
-        id: '26',
+        id: 26,
         category : `shoes`,
                 // + accessories 
                 // + apparel
@@ -355,7 +355,7 @@ const products =[
         productType : `sandal`,
     },
     {
-        id: '27',
+        id: 27,
         category : `shoes`,
                 // + accessories 
                 // + apparel
@@ -370,7 +370,7 @@ const products =[
         productType : `sneaker`,
     },
     {
-        id: '28',
+        id: 28,
         category : `shoes`,
                 // + accessories 
                 // + apparel
@@ -385,7 +385,7 @@ const products =[
         productType : `sneaker`,
     },
     {
-        id: '29',
+        id: 29,
         category : `shoes`,
                 // + accessories 
                 // + apparel
@@ -401,7 +401,7 @@ const products =[
         productType : `sneaker`,
     },
     {
-        id: '30',
+        id: 30,
         category : `shoes`,
                 // + accessories 
                 // + apparel
@@ -417,7 +417,7 @@ const products =[
         productType : `sneaker`,
     },
     // do duy hieu data
-    {   id: '31',
+    {   id: 31,
         category : `apparel`,
         name : `Nike Sportwear`,
         brand : `Nike`,
@@ -430,7 +430,7 @@ const products =[
         productType : `T- Shirt`,
            
     },
-    {   id: '32',
+    {   id: 32,
         category : `apparel`,
         name : `Nike Dri-FIT Player`,
         brand : `Nike`,
@@ -443,7 +443,7 @@ const products =[
         productType : `Polo`,
     },
     {   
-        id: '33',
+        id: 33,
         category : `apparel`,
         name : `Short-Sleeve Running Top`,
         brand : `Nike`,
@@ -456,7 +456,7 @@ const products =[
         productType : `T-shirt`,
     },
     {   
-        id: '34',
+        id: 34,
         category : `shoes`,
         name : `Nike Air Force 1 Crater`,
         brand : `Nike`,
@@ -469,7 +469,7 @@ const products =[
         productType : `originals`,
     },
     {   
-        id: '35',
+        id: 35,
         category : `shoes`,
         name : `Nike Air Force 1 React LV8`,
         brand : `Nike`,
@@ -477,12 +477,12 @@ const products =[
         color : ['cyan','yellow','black','white'],
         gender : ['male','female'],
         price : 900,
-        img:[`./media/shoes/originals/Nike Air Force 1 React LV8.jpg`,`./media/shoes/originals/Nike Air Force 1 React LV8 2.jpg`],
+        img:[`./media/img/shoes/originals/Nike Air Force 1 React LV8.jpg`,`./media/img/shoes/originals/Nike Air Force 1 React LV8 2.jpg`],
         description :'The Nike Air Force 1 React LV8 WW puts a fresh spin on the basketball OG with crisp leather, bold colours and the perfect amount of flash',
         productType : `originals`,
     },
     {
-        id: '36',
+        id: 36,
         category : `shoes`,
         name : `Nike Tanjun`,
         brand : `Nike`,
@@ -495,7 +495,7 @@ const products =[
         productType : `running`,
     },
     {   
-        id: '37',
+        id: 37,
         category : `apparel`,
         name : `Nike BETRUE`,
         brand : `Nike`,
@@ -508,7 +508,7 @@ const products =[
         productType : `hoodie`,
     },
     {   
-        id: '38',
+        id: 38,
         category : `apparel`,
         name : `Nike Sport Tech Pack`,
         brand : `Nike`,
@@ -521,7 +521,7 @@ const products =[
         productType : `Jacket`,
     },
     {   
-        id: '39',
+        id: 39,
         category : `apparel`,
         name : `Nike SportSwear`,
         brand : `Nike`,
@@ -529,12 +529,12 @@ const products =[
         color : ['Track Rede'],
         gender : ['female'],
         price : 860,
-        img:[`./media/img/apparel/Dress/Nike SportSwear.img`,`./media/img/apparel/Dress/Nike SportSwear 2.img`],
+        img:[`./media/img/apparel/Dress/Nike SportSwear.jpg`,`./media/img/apparel/Dress/Nike SportSwear 2.jpg`],
         description:'Made from soft cotton jersey, the Nike Sportswear Printed Dress sets you up for comfort and summer fun with a vibrant rainbow stripe print.',
         productType : `Dress`,
     },
     {   
-        id: '40',
+        id: 40,
         category : `apparel`,
         name : `Nike Essential`,
         brand : `Nike`,
@@ -544,7 +544,7 @@ const products =[
         price : 400,
         img:[`./media/img/apparel/pants/Nike Essential.jpg`,`./media/img/apparel/pants/Nike Essential 2.jpg`],
         description:'made with a dual-fabric construction, giving you the comfort of warm-up trousers and the compression of tights at the same time. ',
-        productType : `pants `,
+        productType : `pants`,
     }, 
 ],
 // tk user + admin

@@ -4,6 +4,9 @@ let showBalen = document.getElementById('balenciaga');
 let showVete = document.getElementById('vetements');
 let showMen = document.getElementById('proMen');
 let showWoman = document.getElementById('proWomen');
+let showApparel = document.getElementById('apparel');
+let showShoes = document.getElementById('shoes');
+let showAccessories = document.getElementById('accessories');
 let showList= document.getElementById("showList");
 let search_Text = document.getElementById("search");
 let search_btn = document.getElementById("search-btn");
@@ -35,12 +38,13 @@ function soProduct(img, name, price)
     showList.insertAdjacentHTML('beforeEnd', 
     `
     <div class="productItem">
-      <div class="productImg"><img src="${img}" alt="" style = "display :flex "></div>
+      <div class="productImg0" style = "position:relative "><img src="${img[0]}" alt="" ></div>
+      <div class="productImg1" style = "position: absolute "><img src="${img[1]}" alt="" ></div>
       <div class="productTit">
-        <b>${name}</b>
+        <b style ="font-size:10px;">${name}</b>
       </div>
-      <div class="productPrice">${price}</div>
-      <button class="addPro">Add to cart</button>
+      <div class="productPrice">$${price}</div>
+      <button  id="addPro">Add to cart</button>
      </div>
     `
     )
@@ -62,8 +66,8 @@ showList.innerHTML = '';
 for(let i=0; i< products.length; i++)
 {
   // , products[i].description
-    soProduct(products[i].img[0], products[i].name,products[i].price);
-    console.log(products[i].price)
+    soProduct(products[i].img, products[i].name,products[i].price);
+    // console.log(products[i].price)
 }
 
 // tìm kiếm theo brand + gender
@@ -140,6 +144,36 @@ showWoman.addEventListener('click',()=>{
   }
 })
 
+showApparel.addEventListener('click',()=>{
+  showList.innerHTML = '';
+  for(let i = 0 ; i < products.length ; i++){
+    if(products[i].category == 'apparel'){
+
+      soProduct(products[i].img[0], products[i].name, products[i].price);
+      
+    }
+  }
+})
+showShoes.addEventListener('click',()=>{
+  showList.innerHTML = '';
+  for(let i = 0 ; i < products.length ; i++){
+    if(products[i].category == 'shoes'){
+
+      soProduct(products[i].img[0], products[i].name, products[i].price);
+      
+    }
+  }
+})
+showAccessories.addEventListener('click',()=>{
+  showList.innerHTML = '';
+  for(let i = 0 ; i < products.length ; i++){
+    if(products[i].category == 'accessories'){
+
+      soProduct(products[i].img[0], products[i].name, products[i].price);
+      
+    }
+  }
+})
 // tìm kiếm theo tên
 function getInputValue(){
   // Selecting the input element and get its value 
