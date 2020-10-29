@@ -15,7 +15,9 @@
         <!-- log in -->
         <div class="logIn" style="display: flex; justify-content: flex-end;">
                 <div ><button id="aboutUs" class="logInItems">About us</button></div>
-                <div ><button id="signIn" class="logInItems">Sign In</button></div>
+                <div ><button id="signIn" class="logInItems">Sign In</button>
+                    
+                </div>
         </div>
         <!-- log in -->
 
@@ -32,13 +34,13 @@
                 <div class="col-2" style="width: 50%; display:flex; justify-content: flex-end;">
                     <!-- <div style=" position: relative"> -->
                         <div class="box-search" style="position: relative;">
-                            <input id="search" type="text" style = "border-radius: 15px; " placeholder="search" onkeyup = "liveSearch()">
-                            <button id="conner" type="button" onclick="getInputValue()" style="border-radius: 50%;" ><i class="fa fa-search"></i></button>
+                            <input id="search" type="text" style = "border-radius: 15px;outline: none; " placeholder="search" onkeyup = "liveSearch()">
+                            <button id="conner" type="button" onclick="getInputValue()" style="border-radius: 50%; outline: none;" ><i class="fa fa-search"></i></button>
                         </div>
                         <ul id="filter-ul" style="list-style-type : none; padding-inline-start: 0; margin-top: 30px;position: absolute; z-index: 1; ">
                                     
                         </ul>
-                        <button id="shopCart" style="background-color: white; border: none;"><i class="fa fa-shopping-cart"></i></button>
+                        <button id="shopCart" style="background-color: white; border: none; outline: none;"><i class="fa fa-shopping-cart"></i></button>
                     <!-- </div> -->
                    
                 </div>
@@ -61,12 +63,11 @@
         <!-- main -->
         <div id="main" style="">
             <!-- sort by  -->
-            <div class="show_type" style=" position: relative; display: flex; justify-content: flex-end; padding-top: 10px; padding-bottom: 10px;">
+            <div class="show_type" style="  position: relative; display: flex; justify-content: flex-end; padding-top: 10px; padding-bottom: 10px;">
                 <div >Sort by :</div>
-                <select name="" id="sortbyprice" class="showSort" style="border: none; color: gray; ">
-                
-                    <option value="hight_to_low"><button>Hight - Low</button></option>
-                    <option value="low_to_hight"><button>Low - Hight</button></option>
+                <select name="" id="sortbyprice" class="showSort" style="border: none; color: gray;">
+                    <option value="hight_to_low" ><button>Hight - Low</button></option>
+                    <option value="low_to_hight" ><button>Low - Hight</button></option>
                 </select>
             </div>
             <!-- sort by -->

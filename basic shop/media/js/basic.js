@@ -12,23 +12,27 @@ let search_Text = document.getElementById("search");
 let search_btn = document.getElementById("search-btn");
 let x = document.getElementsByClassName("silderItems");
 //chuyển đọng trái phải silder show
-var slideIndex = 1;
+var slideIndex = 0;
 showDivs(slideIndex);
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
+function showDivs() {
+  let i;
+  let x = document.getElementsByClassName("mySlides");
+  for(i = 0 ; i< x.length;i++ ){
+    x[i].style.display = 'none';
+  }
+  slideIndex ++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  if (slideIndex < 1) {slideIndex = x.length} ;
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
   x[slideIndex-1].style.display = "block";
-  
+  setTimeout(showDivs,2000);
 }
 // auto run slider
 
@@ -38,8 +42,10 @@ function soProduct(img, name, price)
     showList.insertAdjacentHTML('beforeEnd', 
     `
     <div class="productItem">
-      <div class="productImg0" style = "position:relative "><img src="${img[0]}" alt="" ></div>
-      <div class="productImg1" style = "position: absolute "><img src="${img[1]}" alt="" ></div>
+      <div class ="productsImg" style = "position: relative">
+        <div class="productImg0" style = "top:0; "><img src="${img[0]}" alt="" ></div>
+        <div class="productImg1" style = "position: absolute ; top: 0 ; z-index :-1"><img src="${img[1]}" alt="" ></div>
+      </div>
       <div class="productTit">
         <b style ="font-size:10px;">${name}</b>
       </div>
@@ -77,7 +83,7 @@ showNike.addEventListener('click',()=>{
   for(let i = 0 ; i < products.length ; i++){
     if(products[i].brand == 'Nike'){
 
-      soProduct(products[i].img[0], products[i].name, products[i].price);
+      soProduct(products[i].img, products[i].name, products[i].price);
       
     }
   }
@@ -88,7 +94,7 @@ showAdidas.addEventListener('click',()=>{
   for(let i = 0 ; i < products.length ; i++){
     if(products[i].brand == 'adidas'){
 
-      soProduct(products[i].img[0], products[i].name, products[i].price);
+      soProduct(products[i].img, products[i].name, products[i].price);
       
     }
   }
@@ -99,7 +105,7 @@ showBalen.addEventListener('click',()=>{
   for(let i = 0 ; i < products.length ; i++){
     if(products[i].brand == 'balenciaga'){
 
-      soProduct(products[i].img[0], products[i].name, products[i].price);
+      soProduct(products[i].img, products[i].name, products[i].price);
       
     }
   }
@@ -111,7 +117,7 @@ showVete.addEventListener('click',()=>{
 
     if(products[i].brand == 'VETEMENTS'){
 
-      soProduct(products[i].img[0], products[i].name, products[i].price);
+      soProduct(products[i].img, products[i].name, products[i].price);
       
     }
   }
@@ -124,7 +130,7 @@ showMen.addEventListener('click',()=>{
     for(let j = 0 ; j <products[i].gender.length ; j++){
       if(products[i].gender[j] == 'male'){
 
-        soProduct(products[i].img[0], products[i].name, products[i].price);
+        soProduct(products[i].img, products[i].name, products[i].price);
         
       }
     }
@@ -137,7 +143,7 @@ showWoman.addEventListener('click',()=>{
     for(let j = 0 ; j <products[i].gender.length ; j++){
       if(products[i].gender[j] == 'female'){
 
-        soProduct(products[i].img[0], products[i].name, products[i].price);
+        soProduct(products[i].img, products[i].name, products[i].price);
         
       }
     }
@@ -149,7 +155,7 @@ showApparel.addEventListener('click',()=>{
   for(let i = 0 ; i < products.length ; i++){
     if(products[i].category == 'apparel'){
 
-      soProduct(products[i].img[0], products[i].name, products[i].price);
+      soProduct(products[i].img, products[i].name, products[i].price);
       
     }
   }
@@ -159,7 +165,7 @@ showShoes.addEventListener('click',()=>{
   for(let i = 0 ; i < products.length ; i++){
     if(products[i].category == 'shoes'){
 
-      soProduct(products[i].img[0], products[i].name, products[i].price);
+      soProduct(products[i].img, products[i].name, products[i].price);
       
     }
   }
@@ -169,7 +175,7 @@ showAccessories.addEventListener('click',()=>{
   for(let i = 0 ; i < products.length ; i++){
     if(products[i].category == 'accessories'){
 
-      soProduct(products[i].img[0], products[i].name, products[i].price);
+      soProduct(products[i].img, products[i].name, products[i].price);
       
     }
   }
@@ -182,7 +188,7 @@ function getInputValue(){
   for(let i = 0 ; i < products.length ;i++){
     let x = products[i].name.toLowerCase()
       if(x == inputVal){
-        soProduct(products[i].img[0], products[i].name, products[i].price);
+        soProduct(products[i].img, products[i].name, products[i].price);
         searchResult(products[i].name);
     }
   }
@@ -204,5 +210,51 @@ function liveSearch(){
   }
 }
 // sắp xếp theo giá 
+const sortPro = document.getElementById("sortbyprice");
+sortPro.addEventListener('change', (e) => {
+  let sortType = sortPro.value;
+  if (sortType == "hight_to_low") {
+    
+    products.sort(function (a, b) {
+      let keyA = a.price;
+      let keyB = b.price;
+      console.log(keyA)
+      if (keyA < keyB) return -1;
+      if (keyA > keyB) return 1;
+      return 0;
+      
+    });
+    for(let i=0;i<products.length; i++){
+      soProduct(products[i].img, products[i].name, products[i].price )
+      }
+    
+  }
+  else {
+    products.sort(function (a, b) {
+      let keyA = a.price;
+      let keyB = b.price;
+      if (keyA < keyB) return 1;
+      if (keyA > keyB) return -1;
+      return 0;
+    });
+    for(let i=0;i<products.length; i++){
+      soProduct(products[i].img, products[i].name, products[i].price )
+      }
 
+  }
+});
+
+// function checkPrice(){
+//   let keyA = a.price;
+//   let keyB = b.price;
+//   alert('hello')
+//   products.sort(function(a,b){
+//     if (keyA < keyB) return -1;
+//       if (keyA > keyB) return 1;
+//       return 0;
+//   });
+//   for(let i=0;i<products.length; i++){
+//     soProduct(products[i].img, products[i].name, products[i].price )
+//   }
+// }
 

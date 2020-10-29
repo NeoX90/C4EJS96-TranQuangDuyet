@@ -28,13 +28,14 @@
     padding-bottom: 20px;
 }
 .logInItems{
-    
+    outline: none;
     background-color: white;
     border: none;
 }
 .btn_menu{
     background-color: white;
     border: none;
+    outline: none;
 }
 .btn_menu:hover{
     border-bottom: solid;
@@ -97,11 +98,16 @@
 #showList .productItem .productImg0 img{
     width: 100%;
 }
-#showList .productItem :hover{
-    display: none;
+.productsImg:hover .productImg0{
+    /* display: none; */
+    visibility: hidden;
+    
 }
-#showList .productItem .productImg1 img{
+.productItem .productImg1 img{
     width: 100%;
+}
+.productsImg:hover .productImg1{
+    z-index: 99;
 }
 #search{
     position: absolute;
