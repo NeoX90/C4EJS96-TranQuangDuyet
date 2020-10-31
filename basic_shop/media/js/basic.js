@@ -1,3 +1,4 @@
+let arrayName = [];
 let showNike = document.getElementById('nike');
 let showAdidas = document.getElementById('adidas');
 let showBalen = document.getElementById('balenciaga');
@@ -82,17 +83,24 @@ function soProduct(img, name, price)
     )
 }
 
-function searchResult (name){
-  filter-ul.insertAdjacentElement('beforeEnd',
+let ProductsList = document.getElementById('ProductsList')
+function searchResult (name){console.log(name)
+  ProductsList.insertAdjacentHTML('beforeEnd',
   `
-    <div>
-      <ul id="filter-ul">
-        <li class="filter-li" style="background-color: black; color:white" >${name}</li>
-      </ul>
-    </div>
-    `
+      <option value="${name}" />              
+  `
   )
 }
+function fillArr(){
+  for( let i = 0 ; i <products.length;i++){
+    arrayName.push(products[i].name.toLowerCase())
+  }
+  // console.log(arrayName)
+  for(let i = 0 ; i < products.length; i++){
+    searchResult(products[i].name)
+  }
+}
+console.log(fillArr())
 // show sản phẩm ra từ đầu
 showList.innerHTML = '';
 for(let i=0; i< products.length; i++)
@@ -207,8 +215,8 @@ showAccessories.addEventListener('click',()=>{
   }
 })
 // tìm kiếm theo tên
+
 function getInputValue(){
-  // Selecting the input element and get its value 
   showList.innerHTML ='';
   var inputVal = search_Text.value.toLowerCase();
   for(let i = 0 ; i < products.length ;i++){
@@ -216,25 +224,11 @@ function getInputValue(){
       if(x == inputVal){
         soProduct(products[i].img, products[i].name, products[i].price);
         searchResult(products[i].name);
+        
     }
   }
 }
- // tìm kiếm search live
-function liveSearch(){
-  let fillterUl = document.getElementById('filter-ul');
-  fillterUl.innerHTML = " ";
-  if (search_Text.value.length > 0) {
-    for(let i =0; i<products.length ; i++){
-      a = products[i].name;
-      if(a.toUpperCase().indexOf((search_Text.value.toUpperCase())) > -1){
-        fillterUl.innerHTML += `<li style = "display :  block; background-color: seashell; border-top: solid;"">${a}</li>`
-      }
-      else {
-        fillterUl.innerHTML += `<li style = "display : none; ">${a}</li>`
-      }
-    }
-  }
-}
+
 // sắp xếp theo giá 
 const sortPro = document.getElementById("sortbyprice");
 sortPro.addEventListener('change', (e) => {

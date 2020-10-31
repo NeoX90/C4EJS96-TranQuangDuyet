@@ -170,6 +170,9 @@ nav{
 .col-7{
     width: 70%;
 }
+/* #ProductsList{
+    margin-right: 10%;
+} */
 @media screen and (max-width : 1245px){
     nav{
         padding: 0 50px;

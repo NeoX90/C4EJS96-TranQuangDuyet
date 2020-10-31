@@ -15,7 +15,9 @@
         <!-- log in -->
         <div class="logIn" style="display: flex; justify-content: flex-end;">
                 <div ><button id="aboutUs" class="logInItems">About us</button></div>
-                <div ><button id="signIn" class="logInItems">Sign In</button>
+                <div >
+                    <button id="signIn" class="logInItems">Sign In</button>
+                    
                     
                 </div>
         </div>
@@ -39,15 +41,13 @@
                 </div>
                 <div  style="display: flex;">
                     <form class="form-search" id="form-search" >
-                        
-                        <!-- style= width: 50%; display:flex; justify-content: flex-end" -->
                         <div class="box-search" style="position: relative;">
-                            <input id="search" type="text" style = "border-radius: 15px;outline: none; " placeholder="search" onkeyup = "liveSearch()">
+                            <input id="search" type="text" style = "border-radius: 15px;outline: none; " placeholder="search" list="ProductsList" >
                             <button id="conner" type="button" onclick="getInputValue()" style="border-radius: 50%; outline: none;" ><i class="fa fa-search"></i></button>
                         </div>
-                        <ul id="filter-ul" style="list-style-type : none; padding-inline-start: 0; ;position: absolute; z-index: 1; top: 50px; right: 10%;">
-                                    
-                        </ul>
+                        <datalist id="ProductsList">
+
+                        </datalist>
                                         
                     </form>
                     <button id="shopCart" style="background-color:white; border: none; outline: none;"><i class="fa fa-shopping-cart"></i></button>
@@ -96,7 +96,6 @@
                         <button id="balenciaga">Balenciaga</button>
                     </div>
                 </div>
-                <!-- <div class="col-7" style="width: 70%;"> -->
                 <!-- show sản phẩm -->
                 <div id="showList" class="col-7" >
                     <!-- products -->
