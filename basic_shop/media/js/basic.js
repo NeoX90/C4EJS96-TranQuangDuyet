@@ -23,20 +23,20 @@ menuBtn.onclick = ()=>{
   searchBtn.classList.add("hide");
   cancelBtn.classList.add("show");
 }
-cancelBtn.onclick = ()=>{
-  items.classList.remove("active");
+// cancelBtn.onclick = ()=>{
+//   items.classList.remove("active");
 //   menuBtn.classList.remove("hide");
   // searchBtn.classList.remove("hide");
 //   cancelBtn.classList.remove("show");
 //   form.classList.remove("active");
 //   cancelBtn.style.color = "#ff3d00";
-}
-searchBtn.onclick = ()=>{
+// }
+// searchBtn.onclick = ()=>{
 //   form.classList.add("active");
   // searchBtn.classList.add("hide");
   // cancelBtn.classList.add("show");
 // }
-}
+// }
 //chuyển đọng trái phải silder show
 var slideIndex = 0;
 showDivs(slideIndex); 
@@ -222,7 +222,7 @@ function getInputValue(){
  // tìm kiếm search live
 function liveSearch(){
   let fillterUl = document.getElementById('filter-ul');
-  fillterUl.innerHTML = "  ";
+  fillterUl.innerHTML = " ";
   if (search_Text.value.length > 0) {
     for(let i =0; i<products.length ; i++){
       a = products[i].name;
