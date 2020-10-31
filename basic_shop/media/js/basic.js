@@ -36,7 +36,7 @@ searchBtn.onclick = ()=>{
   // searchBtn.classList.add("hide");
   // cancelBtn.classList.add("show");
 // }
-
+}
 //chuyển đọng trái phải silder show
 var slideIndex = 0;
 showDivs(slideIndex); 
