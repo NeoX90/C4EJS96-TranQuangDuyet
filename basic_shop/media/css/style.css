@@ -162,6 +162,14 @@ nav{
 .menu-items li{
     padding: 0 15px;
 }
+
+#row-items {
+    /* flex-direction: row; */
+    display: flex;
+}
+.col-7{
+    width: 70%;
+}
 @media screen and (max-width : 1245px){
     nav{
         padding: 0 50px;
@@ -177,20 +185,20 @@ nav{
         flex: 2;
         text-align: center;
     }
-    .form-search{     /* nav-form */
+    .form-search{     
         position: fixed;
         display: none;
-        z-index: 99;
-        top: 70px;
+        z-index: 98;
+        top: 0px;
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
-        right: 0;
+        right: -100%;
         height: 100%;
         background-color: black;
         display: inline-block;
         padding: 10px 50px 0 50px;
-        transition: left 0.3s ease;
+        transition: right 0.3s ease;
     }
     #shopCart{
         /* display: none; */
@@ -200,8 +208,8 @@ nav{
     }
     .menu-items{
         position: fixed;
-        z-index: 99;
-        top: 70px;
+        z-index: 98;
+        top: 0px;
         width: 90%;
         left: -100%;
         height: 100%;
@@ -210,18 +218,25 @@ nav{
         padding: 10px 50px 0 50px;
         transition: left 0.3s ease;
     }
-    .active{
+    .row .active{
         margin-left: 5%;
         margin-right: 5%;
         left: 0px;
+        
         /* background-color: red; */
 
     }
-    .search-icon .hide{
+    .active1{
+        right: 0 !important;
+    }
+    .hide{
         display: none;
     }
-    .show{
+    .row .show{
         display: block;
+        z-index: 99;
+        color: white;
+        /* background-color: red; */
     }
     .menu-items li{
         line-height: 40px;
@@ -237,7 +252,7 @@ nav{
     .box-search{
         /* position: absolute; */
         top: 20px;
-        /* right: 50%; */
+        right: 50%;
         margin-left: 5%;
         margin-right: 5%;
         width: 100%;
@@ -249,6 +264,20 @@ nav{
         margin-right: 10%;
         margin-left: 10%;
         /* display: block; */
+    }
+    #row-items{
+        flex-direction: column;
+        /* display: table-cell; */
+    }
+    #brand-items{
+        display: flex;
+    }
+    #showList{
+        width: 100%;
+    }
+    #showList .productItem{
+        width: 42%;
+        margin-left: 2em;
     }
     /* .box-search::before{
         position: absolute;

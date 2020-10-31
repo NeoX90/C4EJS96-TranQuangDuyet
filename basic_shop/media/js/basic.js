@@ -12,32 +12,32 @@ let search_Text = document.getElementById("search");
 let search_btn = document.getElementById("search-btn");
 let x = document.getElementsByClassName("silderItems");
 // responsive menu
-let menuBtn = document.querySelector(".menu-icon span")
-let searchBtn = document.querySelector(".search-icon");
+let menuBtn = document.querySelector(".menu-icon #menu-icon-bars")
+let searchBtn = document.querySelector("#search-icon");
 let cancelBtn = document.querySelector(".cancel-icon");
 let items = document.querySelector(".menu-items")
-let form = document.querySelector(".box-search")
+let form = document.querySelector("#form-search")
 menuBtn.onclick = ()=>{
   items.classList.add("active");
   menuBtn.classList.add("hide");
   searchBtn.classList.add("hide");
   cancelBtn.classList.add("show");
 }
-// cancelBtn.onclick = ()=>{
-//   items.classList.remove("active");
-//   menuBtn.classList.remove("hide");
-  // searchBtn.classList.remove("hide");
-//   cancelBtn.classList.remove("show");
-//   form.classList.remove("active");
-//   cancelBtn.style.color = "#ff3d00";
+cancelBtn.onclick = ()=>{
+  items.classList.remove("active");
+  menuBtn.classList.remove("hide");
+  searchBtn.classList.remove("hide");
+  // cancelBtn.classList.remove("show");
+  form.classList.remove("active1");
+  // cancelBtn.style.color = "#ff3d00";
+}
+searchBtn.onclick = ()=>{
+  form.classList.add("active1");
+  searchBtn.classList.add("hide");
+  cancelBtn.classList.add("show");
+}
 // }
-// searchBtn.onclick = ()=>{
-//   form.classList.add("active");
-  // searchBtn.classList.add("hide");
-  // cancelBtn.classList.add("show");
-// }
-// }
-//chuyển đọng trái phải silder show
+//chuyển đọng trái phải silder show + auto run
 var slideIndex = 0;
 showDivs(slideIndex); 
 
@@ -60,7 +60,7 @@ function showDivs() {
   x[slideIndex-1].style.display = "block";
   setTimeout(showDivs,2000);
 }
-// auto run slider
+
 
 //show sp ra html
 function soProduct(img, name, price)
