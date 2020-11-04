@@ -232,6 +232,7 @@ function getInputValue(){
 // sắp xếp theo giá 
 const sortPro = document.getElementById("sortbyprice");
 sortPro.addEventListener('change', (e) => {
+
   let sortType = sortPro.value;
   if (sortType == "hight_to_low") {
     
@@ -245,11 +246,13 @@ sortPro.addEventListener('change', (e) => {
       
     });
     for(let i=0;i<products.length; i++){
+      
       soProduct(products[i].img, products[i].name, products[i].price )
       }
     
   }
   else {
+    
     products.sort(function (a, b) {
       let keyA = a.price;
       let keyB = b.price;
@@ -258,23 +261,12 @@ sortPro.addEventListener('change', (e) => {
       return 0;
     });
     for(let i=0;i<products.length; i++){
+      
       soProduct(products[i].img, products[i].name, products[i].price )
       }
 
   }
 });
+// Hoàng Công
 
-// function checkPrice(){
-//   let keyA = a.price;
-//   let keyB = b.price;
-//   alert('hello')
-//   products.sort(function(a,b){
-//     if (keyA < keyB) return -1;
-//       if (keyA > keyB) return 1;
-//       return 0;
-//   });
-//   for(let i=0;i<products.length; i++){
-//     soProduct(products[i].img, products[i].name, products[i].price )
-//   }
-// }
 

@@ -294,3 +294,17 @@ nav{
         border-bottom-color: red;
     } */
 }
+.logIn,
+.signUp {
+    /* margin-top: 20px; */
+    
+}
+
+#btn-login {
+    /* margin-top: 20px; */
+    /* margin-left: 0; */
+    /* background-color: #383838; */
+    /* background-color: transparent; 
+    border: none; 
+    outline: none; */
+}
